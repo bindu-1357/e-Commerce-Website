@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="body.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm" onsubmit="validateForm(event)">
+            <h2>Registration Form</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="phonenumber">Phone Number:</label>
+            <input type="text" id="phonenumber" name="Phone Number" placeholder="Enter your phone number" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"   required>
+            
+            
+           
+            
+            <button id="myButton">Register</button>
+
+            <script>
+   
+                 document.getElementById('myButton').addEventListener('click', function() {
+                     window.location.href = 'confirmation.html';
+                      });
+            </script>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
